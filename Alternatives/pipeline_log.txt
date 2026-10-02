@@ -1,0 +1,4 @@
+2026-10-02 22:20:11      controller before: type=FIXEDTIME prog=
+2026-10-02 22:20:11      controller after:  type=VAP prog= supply1=C:\Users\muhta86\OneDrive - Linköpings universitet\II-sim Vissim lab (2026)\II-sim Vissim lab (2025)\Control_logic.vap supply2=C:\Users\muhta86\OneDrive - Linköpings universitet\II-sim Vissim lab (2026)\II-sim Vissim lab (2025)\Signal_data.pua
+2026-10-02 22:26:19      controller before: type=FIXEDTIME prog=
+2026-10-02 22:26:19      controller after:  type=VAP prog= supply1=C:\Users\muhta86\OneDrive - Linköpings universitet\II-sim Vissim lab (2026)\II-sim Vissim lab (2025)\Control_logic.vap supply2=C:\Users\muhta86\OneDrive - Linköpings universitet\II-sim Vissim lab (2026)\II-sim Vissim lab (2025)\Signal_data.pua

@@ -1,0 +1,67 @@
+\begin{table}[H]
+\centering
+\caption{Calibrated parameter values (configuration BEST\_SIM).}
+\begin{tabular}{llrr}
+\toprule
+\textbf{Parameter} & \textbf{Description} & \textbf{Original} & \textbf{Calibrated}\\
+\midrule
+ax & W74 average standstill distance [m] (driving behaviour 1) & 2.00 & 1.83\\
+bx\_add & W74 additive part of safety distance & 2.00 & 1.00\\
+bx\_mult & W74 multiplicative part of safety distance & 3.00 & 2.00\\
+sdf\_sig & Safety-distance reduction factor near stop lines & 0.60 & 0.55\\
+v\_kungs & Desired speed Kungsgatan inputs (comp. 1), U(c-5,c+5) [km/h] & 53.00 & 53.50\\
+v\_slott & Desired speed Slottsgatan inputs (comp. 5), U(c-5,c+5) [km/h] & 53.00 & 53.86\\
+acc\_scale & Scale on desired-acceleration functions Car/HGV & 1.00 & 1.18\\
+dec\_scale & Scale on desired-deceleration functions Car/HGV & 1.00 & 0.50\\
+v\_right & Right-turn reduced-speed areas 1,4,5,9, U(c-2.5,c+2.5) [km/h] & 22.50 & 13.68\\
+dec\_right & Deceleration towards right-turn reduced-speed areas [m/s2] & 2.00 & 0.50\\
+v\_left & Left-turn reduced-speed areas 6,7,8,10, U(c-2.5,c+2.5) [km/h] & 27.50 & 10.00\\
+ca\_gap & Front/rear gap at vehicle-pedestrian/bike conflict areas [s] & 0.50 & 1.49\\
+ca\_sdf & Safety distance factor at those conflict areas & 1.50 & 1.82\\
+v\_bike & Conventional bike desired speed, U(c-1.5,c+1.5) [km/h] & 13.50 & 17.60\\
+dv\_ebike & E-bike minus bike desired speed; e-bike U(c-2.5,c+2.5) [km/h] & 4.00 & 2.25\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Validation of mean speeds with independent random seeds ($n_x=10$ replications, $n_y=10$ field days, $t_{crit}=2.101$).}
+\begin{tabular}{llrrrrrc}
+\toprule
+\textbf{Loc.} & \textbf{Name} & \textbf{Field} & \textbf{s.d.} & \textbf{Sim.} & \textbf{s.d.} & $T$ & \textbf{H$_0$ kept}\\
+\midrule
+L1 & Slottsgatan East in & 17.46 & 4.66 & 19.60 & 1.31 & 1.40 & yes\\
+L2 & Slottsgatan West out & 48.71 & 0.69 & 47.67 & 0.43 & -4.08 & no\\
+L3 & Kungsgatan South out & 49.06 & 0.34 & 47.75 & 0.57 & -6.27 & no\\
+L4 & Kungsgatan South in & 27.00 & 1.63 & 24.76 & 0.98 & -3.72 & no\\
+L5 & Slottsgatan East out & 40.20 & 0.48 & 38.62 & 0.54 & -6.86 & no\\
+L6 & Kungsgatan North out & 46.80 & 0.44 & 48.18 & 0.47 & 6.79 & no\\
+L7 & Kungsgatan North in & 34.41 & 1.41 & 36.47 & 1.07 & 3.67 & no\\
+L8 & Slottsgatan West in & 19.05 & 1.96 & 18.35 & 1.73 & -0.85 & yes\\
+L9 & Kungsgatan South in (bike) & 18.07 & 0.55 & 17.96 & 0.30 & -0.55 & yes\\
+L10 & Kungsgatan North out (bike) & 17.70 & 0.57 & 17.82 & 0.28 & 0.61 & yes\\
+L11 & Kungsgatan North in (bike) & 18.07 & 0.32 & 17.99 & 0.21 & -0.72 & yes\\
+L12 & Kungsgatan South out (bike) & 17.77 & 0.33 & 17.89 & 0.23 & 0.88 & yes\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Mean accelerations [m/s$^2$], used only for validation.}
+\begin{tabular}{lrrrc}
+\toprule
+\textbf{Loc.} & \textbf{Field} & \textbf{Sim.} & $T$ & \textbf{H$_0$ kept}\\
+\midrule
+L1 & -1.787 & -0.818 & 19.78 & no\\
+L2 & 0.763 & 1.443 & 24.72 & no\\
+L3 & 0.505 & 0.826 & 13.19 & no\\
+L4 & -0.214 & 0.197 & 11.47 & no\\
+L5 & 1.600 & 2.049 & 29.85 & no\\
+L6 & 0.724 & 0.718 & -0.26 & yes\\
+L7 & 0.966 & 1.140 & 4.67 & no\\
+L8 & -0.710 & -0.115 & 6.63 & no\\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,250 @@
+2026-10-02 20:38:58  RUNNING design.py screen
+2026-10-02 20:39:06  RUNNING run_vissim.py --design design_screen.csv --runs 3 --out results_screen.csv
+2026-10-02 20:39:07  run_vissim: design_screen.csv: 122 to run (0 done), runs=3, seed=42/1 -> results_screen.csv
+2026-10-02 20:39:28    Vissim started: PTV Vissim Thesis 2026 (SP 07)
+2026-10-02 20:39:50    [1/122] REF_ORIGINAL done in 22 s, unfinished vehicles 5, ETA 44 min
+2026-10-02 20:40:14    [2/122] REF_BASEPARAMS done in 24 s, unfinished vehicles 4, ETA 46 min
+2026-10-02 20:40:37    [3/122] LHS_001 done in 23 s, unfinished vehicles 0, ETA 46 min
+2026-10-02 20:40:58    [4/122] LHS_002 done in 21 s, unfinished vehicles 0, ETA 45 min
+2026-10-02 20:41:21    [5/122] LHS_003 done in 22 s, unfinished vehicles 39, ETA 44 min
+2026-10-02 20:41:42    [6/122] LHS_004 done in 22 s, unfinished vehicles 590, ETA 43 min
+2026-10-02 20:42:03    [7/122] LHS_005 done in 21 s, unfinished vehicles 0, ETA 43 min
+2026-10-02 20:42:25    [8/122] LHS_006 done in 21 s, unfinished vehicles 12, ETA 42 min
+2026-10-02 20:42:46    [9/122] LHS_007 done in 21 s, unfinished vehicles 100, ETA 42 min
+2026-10-02 20:43:10    [10/122] LHS_008 done in 23 s, unfinished vehicles 3, ETA 41 min
+2026-10-02 20:43:31    [11/122] LHS_009 done in 21 s, unfinished vehicles 0, ETA 41 min
+2026-10-02 20:43:52    [12/122] LHS_010 done in 21 s, unfinished vehicles 3, ETA 40 min
+2026-10-02 20:44:14    [13/122] LHS_011 done in 22 s, unfinished vehicles 99, ETA 40 min
+2026-10-02 20:44:35    [14/122] LHS_012 done in 21 s, unfinished vehicles 0, ETA 40 min
+2026-10-02 20:44:56    [15/122] LHS_013 done in 21 s, unfinished vehicles 46, ETA 39 min
+2026-10-02 20:45:19    [16/122] LHS_014 done in 23 s, unfinished vehicles 438, ETA 39 min
+2026-10-02 20:45:40    [17/122] LHS_015 done in 21 s, unfinished vehicles 134, ETA 38 min
+2026-10-02 20:46:00    [18/122] LHS_016 done in 20 s, unfinished vehicles 0, ETA 38 min
+2026-10-02 20:46:20    [19/122] LHS_017 done in 20 s, unfinished vehicles 0, ETA 37 min
+2026-10-02 20:46:41    [20/122] LHS_018 done in 21 s, unfinished vehicles 238, ETA 37 min
+2026-10-02 20:47:03    [21/122] LHS_019 done in 22 s, unfinished vehicles 475, ETA 36 min
+2026-10-02 20:47:24    [22/122] LHS_020 done in 21 s, unfinished vehicles 416, ETA 36 min
+2026-10-02 20:47:45    [23/122] LHS_021 done in 21 s, unfinished vehicles 596, ETA 36 min
+2026-10-02 20:48:08    [24/122] LHS_022 done in 23 s, unfinished vehicles 472, ETA 35 min
+2026-10-02 20:48:29    [25/122] LHS_023 done in 21 s, unfinished vehicles 487, ETA 35 min
+2026-10-02 20:48:51    [26/122] LHS_024 done in 22 s, unfinished vehicles 513, ETA 35 min
+2026-10-02 20:49:12    [27/122] LHS_025 done in 22 s, unfinished vehicles 104, ETA 34 min
+2026-10-02 20:49:34    [28/122] LHS_026 done in 21 s, unfinished vehicles 7, ETA 34 min
+2026-10-02 20:49:56    [29/122] LHS_027 done in 22 s, unfinished vehicles 225, ETA 34 min
+2026-10-02 20:50:18    [30/122] LHS_028 done in 22 s, unfinished vehicles 499, ETA 33 min
+2026-10-02 20:50:39    [31/122] LHS_029 done in 21 s, unfinished vehicles 350, ETA 33 min
+2026-10-02 20:51:01    [32/122] LHS_030 done in 22 s, unfinished vehicles 61, ETA 33 min
+2026-10-02 20:51:23    [33/122] LHS_031 done in 22 s, unfinished vehicles 210, ETA 32 min
+2026-10-02 20:51:44    [34/122] LHS_032 done in 21 s, unfinished vehicles 265, ETA 32 min
+2026-10-02 20:52:05    [35/122] LHS_033 done in 21 s, unfinished vehicles 333, ETA 31 min
+2026-10-02 20:52:26    [36/122] LHS_034 done in 21 s, unfinished vehicles 238, ETA 31 min
+2026-10-02 20:52:46    [37/122] LHS_035 done in 20 s, unfinished vehicles 0, ETA 31 min
+2026-10-02 20:53:09    [38/122] LHS_036 done in 23 s, unfinished vehicles 275, ETA 30 min
+2026-10-02 20:53:30    [39/122] LHS_037 done in 21 s, unfinished vehicles 578, ETA 30 min
+2026-10-02 20:53:51    [40/122] LHS_038 done in 21 s, unfinished vehicles 160, ETA 30 min
+2026-10-02 20:54:12    [41/122] LHS_039 done in 21 s, unfinished vehicles 0, ETA 29 min
+2026-10-02 20:54:33    [42/122] LHS_040 done in 21 s, unfinished vehicles 625, ETA 29 min
+2026-10-02 20:54:54    [43/122] LHS_041 done in 21 s, unfinished vehicles 0, ETA 28 min
+2026-10-02 20:55:16    [44/122] LHS_042 done in 22 s, unfinished vehicles 16, ETA 28 min
+2026-10-02 20:55:36    [45/122] LHS_043 done in 21 s, unfinished vehicles 3, ETA 28 min
+2026-10-02 20:55:57    [46/122] LHS_044 done in 21 s, unfinished vehicles 0, ETA 27 min
+2026-10-02 20:56:18    [47/122] LHS_045 done in 21 s, unfinished vehicles 0, ETA 27 min
+2026-10-02 20:56:39    [48/122] LHS_046 done in 21 s, unfinished vehicles 63, ETA 26 min
+2026-10-02 20:57:00    [49/122] LHS_047 done in 22 s, unfinished vehicles 39, ETA 26 min
+2026-10-02 20:57:22    [50/122] LHS_048 done in 22 s, unfinished vehicles 943, ETA 26 min
+2026-10-02 20:57:43    [51/122] LHS_049 done in 21 s, unfinished vehicles 71, ETA 25 min
+2026-10-02 20:58:05    [52/122] LHS_050 done in 22 s, unfinished vehicles 49, ETA 25 min
+2026-10-02 20:58:26    [53/122] LHS_051 done in 21 s, unfinished vehicles 155, ETA 25 min
+2026-10-02 20:58:47    [54/122] LHS_052 done in 21 s, unfinished vehicles 24, ETA 24 min
+2026-10-02 20:59:08    [55/122] LHS_053 done in 21 s, unfinished vehicles 462, ETA 24 min
+2026-10-02 20:59:29    [56/122] LHS_054 done in 21 s, unfinished vehicles 42, ETA 24 min
+2026-10-02 20:59:49    [57/122] LHS_055 done in 21 s, unfinished vehicles 7, ETA 23 min
+2026-10-02 21:00:11    [58/122] LHS_056 done in 22 s, unfinished vehicles 4, ETA 23 min
+2026-10-02 21:00:32    [59/122] LHS_057 done in 21 s, unfinished vehicles 512, ETA 23 min
+2026-10-02 21:00:53    [60/122] LHS_058 done in 21 s, unfinished vehicles 36, ETA 22 min
+2026-10-02 21:01:16    [61/122] LHS_059 done in 22 s, unfinished vehicles 458, ETA 22 min
+2026-10-02 21:01:39    [62/122] LHS_060 done in 23 s, unfinished vehicles 117, ETA 21 min
+2026-10-02 21:02:00    [63/122] LHS_061 done in 21 s, unfinished vehicles 99, ETA 21 min
+2026-10-02 21:02:23    [64/122] LHS_062 done in 22 s, unfinished vehicles 524, ETA 21 min
+2026-10-02 21:02:44    [65/122] LHS_063 done in 21 s, unfinished vehicles 470, ETA 20 min
+2026-10-02 21:03:06    [66/122] LHS_064 done in 22 s, unfinished vehicles 0, ETA 20 min
+2026-10-02 21:03:27    [67/122] LHS_065 done in 21 s, unfinished vehicles 386, ETA 20 min
+2026-10-02 21:03:48    [68/122] LHS_066 done in 22 s, unfinished vehicles 40, ETA 19 min
+2026-10-02 21:04:10    [69/122] LHS_067 done in 21 s, unfinished vehicles 71, ETA 19 min
+2026-10-02 21:04:31    [70/122] LHS_068 done in 21 s, unfinished vehicles 0, ETA 19 min
+2026-10-02 21:04:52    [71/122] LHS_069 done in 21 s, unfinished vehicles 331, ETA 18 min
+2026-10-02 21:05:15    [72/122] LHS_070 done in 22 s, unfinished vehicles 6, ETA 18 min
+2026-10-02 21:05:35    [73/122] LHS_071 done in 20 s, unfinished vehicles 480, ETA 18 min
+2026-10-02 21:05:56    [74/122] LHS_072 done in 21 s, unfinished vehicles 82, ETA 17 min
+2026-10-02 21:06:18    [75/122] LHS_073 done in 21 s, unfinished vehicles 448, ETA 17 min
+2026-10-02 21:06:39    [76/122] LHS_074 done in 21 s, unfinished vehicles 433, ETA 16 min
+2026-10-02 21:07:00    [77/122] LHS_075 done in 21 s, unfinished vehicles 43, ETA 16 min
+2026-10-02 21:07:21    [78/122] LHS_076 done in 21 s, unfinished vehicles 550, ETA 16 min
+2026-10-02 21:07:43    [79/122] LHS_077 done in 21 s, unfinished vehicles 0, ETA 15 min
+2026-10-02 21:08:05    [80/122] LHS_078 done in 22 s, unfinished vehicles 195, ETA 15 min
+2026-10-02 21:08:26    [81/122] LHS_079 done in 21 s, unfinished vehicles 479, ETA 15 min
+2026-10-02 21:08:47    [82/122] LHS_080 done in 21 s, unfinished vehicles 0, ETA 14 min
+2026-10-02 21:09:08    [83/122] LHS_081 done in 21 s, unfinished vehicles 497, ETA 14 min
+2026-10-02 21:09:29    [84/122] LHS_082 done in 21 s, unfinished vehicles 414, ETA 14 min
+2026-10-02 21:09:51    [85/122] LHS_083 done in 21 s, unfinished vehicles 106, ETA 13 min
+2026-10-02 21:10:13    [86/122] LHS_084 done in 22 s, unfinished vehicles 64, ETA 13 min
+2026-10-02 21:10:35    [87/122] LHS_085 done in 22 s, unfinished vehicles 195, ETA 13 min
+2026-10-02 21:10:56    [88/122] LHS_086 done in 21 s, unfinished vehicles 267, ETA 12 min
+2026-10-02 21:11:18    [89/122] LHS_087 done in 22 s, unfinished vehicles 325, ETA 12 min
+2026-10-02 21:11:40    [90/122] LHS_088 done in 22 s, unfinished vehicles 0, ETA 11 min
+2026-10-02 21:12:01    [91/122] LHS_089 done in 21 s, unfinished vehicles 0, ETA 11 min
+2026-10-02 21:12:22    [92/122] LHS_090 done in 21 s, unfinished vehicles 482, ETA 11 min
+2026-10-02 21:12:43    [93/122] LHS_091 done in 21 s, unfinished vehicles 392, ETA 10 min
+2026-10-02 21:13:05    [94/122] LHS_092 done in 22 s, unfinished vehicles 537, ETA 10 min
+2026-10-02 21:13:26    [95/122] LHS_093 done in 21 s, unfinished vehicles 31, ETA 10 min
+2026-10-02 21:13:47    [96/122] LHS_094 done in 21 s, unfinished vehicles 27, ETA 9 min
+2026-10-02 21:14:08    [97/122] LHS_095 done in 21 s, unfinished vehicles 212, ETA 9 min
+2026-10-02 21:14:29    [98/122] LHS_096 done in 21 s, unfinished vehicles 104, ETA 9 min
+2026-10-02 21:14:50    [99/122] LHS_097 done in 21 s, unfinished vehicles 0, ETA 8 min
+2026-10-02 21:15:12    [100/122] LHS_098 done in 22 s, unfinished vehicles 3, ETA 8 min
+2026-10-02 21:15:33    [101/122] LHS_099 done in 21 s, unfinished vehicles 7, ETA 8 min
+2026-10-02 21:15:54    [102/122] LHS_100 done in 21 s, unfinished vehicles 0, ETA 7 min
+2026-10-02 21:16:15    [103/122] LHS_101 done in 21 s, unfinished vehicles 320, ETA 7 min
+2026-10-02 21:16:36    [104/122] LHS_102 done in 21 s, unfinished vehicles 170, ETA 6 min
+2026-10-02 21:16:58    [105/122] LHS_103 done in 22 s, unfinished vehicles 519, ETA 6 min
+2026-10-02 21:17:20    [106/122] LHS_104 done in 22 s, unfinished vehicles 24, ETA 6 min
+2026-10-02 21:17:41    [107/122] LHS_105 done in 21 s, unfinished vehicles 190, ETA 5 min
+2026-10-02 21:18:04    [108/122] LHS_106 done in 23 s, unfinished vehicles 0, ETA 5 min
+2026-10-02 21:18:28    [109/122] LHS_107 done in 24 s, unfinished vehicles 501, ETA 5 min
+2026-10-02 21:18:51    [110/122] LHS_108 done in 23 s, unfinished vehicles 28, ETA 4 min
+2026-10-02 21:19:13    [111/122] LHS_109 done in 23 s, unfinished vehicles 349, ETA 4 min
+2026-10-02 21:19:35    [112/122] LHS_110 done in 21 s, unfinished vehicles 187, ETA 4 min
+2026-10-02 21:19:56    [113/122] LHS_111 done in 21 s, unfinished vehicles 149, ETA 3 min
+2026-10-02 21:20:18    [114/122] LHS_112 done in 22 s, unfinished vehicles 369, ETA 3 min
+2026-10-02 21:20:39    [115/122] LHS_113 done in 21 s, unfinished vehicles 446, ETA 3 min
+2026-10-02 21:21:00    [116/122] LHS_114 done in 22 s, unfinished vehicles 10, ETA 2 min
+2026-10-02 21:21:22    [117/122] LHS_115 done in 22 s, unfinished vehicles 108, ETA 2 min
+2026-10-02 21:21:43    [118/122] LHS_116 done in 21 s, unfinished vehicles 8, ETA 1 min
+2026-10-02 21:22:04    [119/122] LHS_117 done in 21 s, unfinished vehicles 21, ETA 1 min
+2026-10-02 21:22:25    [120/122] LHS_118 done in 20 s, unfinished vehicles 0, ETA 1 min
+2026-10-02 21:22:45    [121/122] LHS_119 done in 21 s, unfinished vehicles 0, ETA 0 min
+2026-10-02 21:23:08    [122/122] LHS_120 done in 23 s, unfinished vehicles 390, ETA 0 min
+2026-10-02 21:23:08  run_vissim: finished
+2026-10-02 21:23:08  RUNNING analyse.py train
+2026-10-02 21:23:19    served-demand threshold at L4: 96.0 % of expected flow
+2026-10-02 21:23:19  analyse train: 526 configurations, 1578 simulation runs
+2026-10-02 21:23:25    surrogate v1: CV R2 0.995
+2026-10-02 21:23:31    surrogate v2: CV R2 0.997
+2026-10-02 21:23:38    surrogate v3: CV R2 0.996
+2026-10-02 21:23:47    surrogate v4: CV R2 0.977
+2026-10-02 21:23:54    surrogate v5: CV R2 0.996
+2026-10-02 21:24:00    surrogate v6: CV R2 0.993
+2026-10-02 21:24:07    surrogate v7: CV R2 0.986
+2026-10-02 21:24:12    surrogate v8: CV R2 0.993
+2026-10-02 21:24:16    surrogate v9: CV R2 0.999
+2026-10-02 21:24:18    surrogate v10: CV R2 0.998
+2026-10-02 21:24:21    surrogate v11: CV R2 1.000
+2026-10-02 21:24:24    surrogate v12: CV R2 0.998
+2026-10-02 21:24:42    surrogate q1: CV R2 0.510
+2026-10-02 21:24:53    surrogate q2: CV R2 0.965
+2026-10-02 21:25:03    surrogate q3: CV R2 0.571
+2026-10-02 21:25:12    surrogate q4: CV R2 0.981
+2026-10-02 21:25:22    surrogate q5: CV R2 0.970
+2026-10-02 21:25:32    surrogate q6: CV R2 0.981
+2026-10-02 21:25:42    surrogate q7: CV R2 0.634
+2026-10-02 21:25:43    surrogate q8: CV R2 nan
+2026-10-02 21:25:55    surrogate a1: CV R2 0.988
+2026-10-02 21:26:02    surrogate a2: CV R2 0.991
+2026-10-02 21:26:10    surrogate a3: CV R2 0.985
+2026-10-02 21:26:16    surrogate a4: CV R2 0.899
+2026-10-02 21:26:24    surrogate a5: CV R2 0.989
+2026-10-02 21:26:35    surrogate a6: CV R2 0.977
+2026-10-02 21:26:43    surrogate a7: CV R2 0.968
+2026-10-02 21:26:51    surrogate a8: CV R2 0.981
+2026-10-02 21:27:47  DONE screen
+2026-10-02 21:27:47  RUNNING design.py refine
+2026-10-02 21:27:49  RUNNING run_vissim.py --design design_refine.csv --runs 3 --out results_refine.csv
+2026-10-02 21:27:49  run_vissim: design_refine.csv: 41 to run (0 done), runs=3, seed=42/1 -> results_refine.csv
+2026-10-02 21:28:10    Vissim started: PTV Vissim Thesis 2026 (SP 07)
+2026-10-02 21:28:33    [1/41] REF_OPT_PREV done in 23 s, unfinished vehicles 25, ETA 16 min
+2026-10-02 21:28:57    [2/41] REF_001 done in 24 s, unfinished vehicles 26, ETA 15 min
+2026-10-02 21:29:18    [3/41] REF_002 done in 21 s, unfinished vehicles 0, ETA 14 min
+2026-10-02 21:29:39    [4/41] REF_003 done in 22 s, unfinished vehicles 183, ETA 14 min
+2026-10-02 21:30:01    [5/41] REF_004 done in 21 s, unfinished vehicles 265, ETA 13 min
+2026-10-02 21:30:23    [6/41] REF_005 done in 22 s, unfinished vehicles 20, ETA 13 min
+2026-10-02 21:30:44    [7/41] REF_006 done in 21 s, unfinished vehicles 151, ETA 12 min
+2026-10-02 21:31:06    [8/41] REF_007 done in 22 s, unfinished vehicles 75, ETA 12 min
+2026-10-02 21:31:27    [9/41] REF_008 done in 21 s, unfinished vehicles 0, ETA 12 min
+2026-10-02 21:31:47    [10/41] REF_009 done in 21 s, unfinished vehicles 4, ETA 11 min
+2026-10-02 21:32:08    [11/41] REF_010 done in 21 s, unfinished vehicles 4, ETA 11 min
+2026-10-02 21:32:30    [12/41] REF_011 done in 21 s, unfinished vehicles 0, ETA 10 min
+2026-10-02 21:32:51    [13/41] REF_012 done in 21 s, unfinished vehicles 16, ETA 10 min
+2026-10-02 21:33:12    [14/41] REF_013 done in 22 s, unfinished vehicles 248, ETA 10 min
+2026-10-02 21:33:36    [15/41] REF_014 done in 23 s, unfinished vehicles 280, ETA 9 min
+2026-10-02 21:33:57    [16/41] REF_015 done in 21 s, unfinished vehicles 36, ETA 9 min
+2026-10-02 21:34:18    [17/41] REF_016 done in 21 s, unfinished vehicles 0, ETA 9 min
+2026-10-02 21:34:39    [18/41] REF_017 done in 21 s, unfinished vehicles 73, ETA 8 min
+2026-10-02 21:35:00    [19/41] REF_018 done in 21 s, unfinished vehicles 29, ETA 8 min
+2026-10-02 21:35:22    [20/41] REF_019 done in 22 s, unfinished vehicles 58, ETA 8 min
+2026-10-02 21:35:43    [21/41] REF_020 done in 21 s, unfinished vehicles 0, ETA 7 min
+2026-10-02 21:36:04    [22/41] REF_021 done in 22 s, unfinished vehicles 247, ETA 7 min
+2026-10-02 21:36:26    [23/41] REF_022 done in 21 s, unfinished vehicles 3, ETA 6 min
+2026-10-02 21:36:47    [24/41] REF_023 done in 21 s, unfinished vehicles 0, ETA 6 min
+2026-10-02 21:37:08    [25/41] REF_024 done in 21 s, unfinished vehicles 209, ETA 6 min
+2026-10-02 21:37:29    [26/41] REF_025 done in 21 s, unfinished vehicles 0, ETA 5 min
+2026-10-02 21:37:50    [27/41] REF_026 done in 21 s, unfinished vehicles 0, ETA 5 min
+2026-10-02 21:38:12    [28/41] REF_027 done in 22 s, unfinished vehicles 202, ETA 5 min
+2026-10-02 21:38:32    [29/41] REF_028 done in 20 s, unfinished vehicles 0, ETA 4 min
+2026-10-02 21:38:53    [30/41] REF_029 done in 21 s, unfinished vehicles 9, ETA 4 min
+2026-10-02 21:39:14    [31/41] REF_030 done in 21 s, unfinished vehicles 159, ETA 4 min
+2026-10-02 21:39:36    [32/41] REF_031 done in 22 s, unfinished vehicles 85, ETA 3 min
+2026-10-02 21:39:58    [33/41] REF_032 done in 22 s, unfinished vehicles 8, ETA 3 min
+2026-10-02 21:40:21    [34/41] REF_033 done in 24 s, unfinished vehicles 38, ETA 3 min
+2026-10-02 21:40:44    [35/41] REF_034 done in 22 s, unfinished vehicles 11, ETA 2 min
+2026-10-02 21:41:05    [36/41] REF_035 done in 21 s, unfinished vehicles 9, ETA 2 min
+2026-10-02 21:41:27    [37/41] REF_036 done in 21 s, unfinished vehicles 10, ETA 1 min
+2026-10-02 21:41:48    [38/41] REF_037 done in 22 s, unfinished vehicles 52, ETA 1 min
+2026-10-02 21:42:09    [39/41] REF_038 done in 21 s, unfinished vehicles 35, ETA 1 min
+2026-10-02 21:42:30    [40/41] REF_039 done in 21 s, unfinished vehicles 0, ETA 0 min
+2026-10-02 21:42:51    [41/41] REF_040 done in 21 s, unfinished vehicles 140, ETA 0 min
+2026-10-02 21:42:51  run_vissim: finished
+2026-10-02 21:42:52  RUNNING analyse.py train
+2026-10-02 21:43:04    served-demand threshold at L4: 96.0 % of expected flow
+2026-10-02 21:43:04  analyse train: 567 configurations, 1701 simulation runs
+2026-10-02 21:43:11    surrogate v1: CV R2 0.995
+2026-10-02 21:43:18    surrogate v2: CV R2 0.997
+2026-10-02 21:43:26    surrogate v3: CV R2 0.996
+2026-10-02 21:43:34    surrogate v4: CV R2 0.976
+2026-10-02 21:43:42    surrogate v5: CV R2 0.997
+2026-10-02 21:43:50    surrogate v6: CV R2 0.992
+2026-10-02 21:43:58    surrogate v7: CV R2 0.986
+2026-10-02 21:44:05    surrogate v8: CV R2 0.993
+2026-10-02 21:44:09    surrogate v9: CV R2 0.999
+2026-10-02 21:44:12    surrogate v10: CV R2 0.998
+2026-10-02 21:44:15    surrogate v11: CV R2 1.000
+2026-10-02 21:44:18    surrogate v12: CV R2 0.998
+2026-10-02 21:44:35    surrogate q1: CV R2 0.551
+2026-10-02 21:44:45    surrogate q2: CV R2 0.965
+2026-10-02 21:44:58    surrogate q3: CV R2 0.594
+2026-10-02 21:45:08    surrogate q4: CV R2 0.982
+2026-10-02 21:45:20    surrogate q5: CV R2 0.971
+2026-10-02 21:45:31    surrogate q6: CV R2 0.982
+2026-10-02 21:45:51    surrogate q7: CV R2 0.665
+2026-10-02 21:45:53    surrogate q8: CV R2 1.000
+2026-10-02 21:46:04    surrogate a1: CV R2 0.989
+2026-10-02 21:46:12    surrogate a2: CV R2 0.992
+2026-10-02 21:46:21    surrogate a3: CV R2 0.985
+2026-10-02 21:46:30    surrogate a4: CV R2 0.907
+2026-10-02 21:46:40    surrogate a5: CV R2 0.990
+2026-10-02 21:46:52    surrogate a6: CV R2 0.974
+2026-10-02 21:47:02    surrogate a7: CV R2 0.965
+2026-10-02 21:47:09    surrogate a8: CV R2 0.981
+2026-10-02 21:48:10  DONE refine
+2026-10-02 21:48:10  RUNNING run_vissim.py --design design_validate.csv --runs 10 --seed 1001 --incr 7 --out results_validate.csv
+2026-10-02 21:48:10  run_vissim: design_validate.csv: 5 to run (0 done), runs=10, seed=1001/7 -> results_validate.csv
+2026-10-02 21:48:29    Vissim started: PTV Vissim Thesis 2026 (SP 07)
+2026-10-02 21:49:36    [1/5] OPT1 done in 67 s, unfinished vehicles 136, ETA 4 min
+2026-10-02 21:50:50    [2/5] OPT2 done in 74 s, unfinished vehicles 113, ETA 4 min
+2026-10-02 21:51:56    [3/5] OPT3 done in 66 s, unfinished vehicles 107, ETA 2 min
+2026-10-02 21:53:04    [4/5] BEST_SIM done in 68 s, unfinished vehicles 215, ETA 1 min
+2026-10-02 21:54:10    [5/5] REF_ORIGINAL done in 66 s, unfinished vehicles 131, ETA 0 min
+2026-10-02 21:54:10  run_vissim: finished
+2026-10-02 21:54:10  RUNNING analyse.py validate
+2026-10-02 21:54:19    served-demand threshold at L4: 97.7 % of expected flow
+2026-10-02 21:54:19  DONE validate
+2026-10-02 21:54:19  ALL DONE (all)

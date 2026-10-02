@@ -1,0 +1,142 @@
+NETWORK PERFORMANCE (mean, 95% CI half-width, paired difference to BASE and p-value)
+scenario class  runs  DelayAvg  DelayAvg_ci  StopsAvg  StopsAvg_ci  SpeedAvg  SpeedAvg_ci  DelayStopAvg  DelayStopAvg_ci  VehArr  VehArr_ci  DelayAvg_diff  DelayAvg_p  StopsAvg_diff  StopsAvg_p  SpeedAvg_diff  SpeedAvg_p  DelayStopAvg_diff  DelayStopAvg_p  VehArr_diff  VehArr_p
+    BASE   All    20    21.256        0.827     0.744        0.028    13.179        0.310        13.871            0.652 1263.55     14.245            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+    BASE   Car    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+    BASE   HGV    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+    BASE  Bike    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+ACTUATED   All    20    15.703        0.709     0.655        0.023    15.859        0.426         8.972            0.574 1264.55     14.786         -5.553       0.000         -0.089       0.000          2.680       0.000             -4.899           0.000         1.00     0.751
+ACTUATED   Car    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+ACTUATED   HGV    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+ACTUATED  Bike    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+INCIDENT   All    20    21.338        0.770     0.751        0.025    13.138        0.303        13.954            0.592 1261.50     13.991          0.082       0.674          0.007       0.471         -0.042       0.583              0.083           0.592        -2.05     0.156
+INCIDENT   Car    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+INCIDENT   HGV    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+INCIDENT  Bike    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+ BIKE800   All    20    22.501        0.608     1.510        0.039    11.282        0.176        15.358            0.511 1917.20     26.438          1.245       0.000          0.766       0.000         -1.897       0.000              1.487           0.000       653.65     0.000
+ BIKE800   Car    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+ BIKE800   HGV    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+ BIKE800  Bike    20       NaN          NaN       NaN          NaN       NaN          NaN           NaN              NaN     NaN        NaN            NaN         NaN            NaN         NaN            NaN         NaN                NaN             NaN          NaN       NaN
+
+replications needed for average delay (BASE, eps 5%): 12.1 (used 20)
+replications needed for average delay (ACTUATED, eps 5%): 16.3 (used 20)
+replications needed for average delay (INCIDENT, eps 5%): 10.4 (used 20)
+replications needed for average delay (BIKE800, eps 5%): 5.8 (used 20)
+
+QUEUES [m] (mean queue over 1800 s, maximum queue)
+scenario  counter        approach  QLen  QLen_ci  QLenMax  QLenMax_ci  QLen_diff  QLen_p
+    BASE        1  Kungsg. S left  1.12     0.22    18.62        4.33        NaN     NaN
+    BASE        2  Kungsg. S main 27.46     1.33    59.06        0.88        NaN     NaN
+    BASE        3  Kungsg. N left  8.46     2.95    47.42        5.70        NaN     NaN
+    BASE        4  Kungsg. N main 11.76     0.49    52.66        1.11        NaN     NaN
+    BASE        5 Slottsg. E left  3.46     0.40    32.62        4.99        NaN     NaN
+    BASE        6 Slottsg. E main  3.10     0.26    28.81        2.77        NaN     NaN
+    BASE        7 Slottsg. W left  3.57     0.44    29.69        2.31        NaN     NaN
+    BASE        8 Slottsg. W main  2.30     0.27    26.95        3.21        NaN     NaN
+    BASE        9    Bike N-bound  0.91     0.06    10.08        1.03        NaN     NaN
+    BASE       10    Bike S-bound  1.11     0.12    11.73        1.05        NaN     NaN
+ACTUATED        1  Kungsg. S left  0.51     0.09    17.05        2.02      -0.61    0.00
+ACTUATED        2  Kungsg. S main 12.08     0.65    58.80        1.16     -15.38    0.00
+ACTUATED        3  Kungsg. N left  2.04     0.72    27.59        6.43      -6.42    0.00
+ACTUATED        4  Kungsg. N main  5.60     0.44    52.02        1.20      -6.16    0.00
+ACTUATED        5 Slottsg. E left  5.10     0.65    44.60        6.78       1.64    0.00
+ACTUATED        6 Slottsg. E main  4.56     0.72    39.01        5.50       1.46    0.00
+ACTUATED        7 Slottsg. W left  5.92     1.02    40.78        6.47       2.35    0.00
+ACTUATED        8 Slottsg. W main  3.13     0.38    29.37        2.38       0.83    0.00
+ACTUATED        9    Bike N-bound  0.45     0.06     8.04        1.08      -0.46    0.00
+ACTUATED       10    Bike S-bound  0.54     0.06     8.73        0.93      -0.57    0.00
+INCIDENT        1  Kungsg. S left  1.03     0.23    19.53        4.58      -0.08    0.42
+INCIDENT        2  Kungsg. S main 26.94     1.55    58.85        1.05      -0.52    0.20
+INCIDENT        3  Kungsg. N left  8.68     3.00    43.93        6.68       0.21    0.49
+INCIDENT        4  Kungsg. N main 11.36     0.49    53.10        1.21      -0.40    0.08
+INCIDENT        5 Slottsg. E left  3.68     0.57    39.97        7.04       0.22    0.38
+INCIDENT        6 Slottsg. E main  3.23     0.25    33.43        5.32       0.13    0.31
+INCIDENT        7 Slottsg. W left  4.51     0.94    44.52        7.15       0.94    0.06
+INCIDENT        8 Slottsg. W main  2.41     0.34    36.19        8.24       0.11    0.51
+INCIDENT        9    Bike N-bound  0.91     0.06    10.08        1.03        NaN     NaN
+INCIDENT       10    Bike S-bound  1.11     0.12    11.73        1.05      -0.00    0.27
+ BIKE800        1  Kungsg. S left  1.61     0.59    24.36        7.45       0.49    0.05
+ BIKE800        2  Kungsg. S main 35.32     0.76    58.78        1.11       7.86    0.00
+ BIKE800        3  Kungsg. N left 12.56     4.59    50.41        3.70       4.10    0.00
+ BIKE800        4  Kungsg. N main 11.82     0.80    52.95        1.23       0.06    0.86
+ BIKE800        5 Slottsg. E left  3.47     0.40    32.62        4.99       0.00    0.03
+ BIKE800        6 Slottsg. E main  3.10     0.26    28.81        2.77       0.00    0.58
+ BIKE800        7 Slottsg. W left  3.57     0.44    29.69        2.31      -0.00    0.98
+ BIKE800        8 Slottsg. W main  2.30     0.27    26.95        3.21       0.00    0.16
+ BIKE800        9    Bike N-bound  9.52     0.48    57.54        4.27       8.61    0.00
+ BIKE800       10    Bike S-bound  9.95     0.52    56.62        3.22       8.84    0.00
+
+QUEUE PROFILE per 10-min interval [m]
+interval             1     2     3
+scenario counter                  
+ACTUATED 1         0.7   0.6   0.3
+         2        12.1  11.8  12.3
+         3         2.4   2.1   1.6
+         4         5.7   5.6   5.6
+         5         5.4   4.5   5.4
+         6         5.1   4.0   4.6
+         7         6.3   6.0   5.4
+         8         3.1   3.2   3.0
+         9         0.4   0.5   0.4
+         10        0.6   0.5   0.6
+BASE     1         1.4   0.9   1.0
+         2        27.6  28.4  26.4
+         3         9.7   7.6   8.1
+         4        11.7  12.6  11.0
+         5         3.5   3.2   3.7
+         6         3.2   2.7   3.3
+         7         3.6   3.6   3.5
+         8         2.4   2.2   2.4
+         9         0.9   1.0   0.8
+         10        1.1   1.2   1.0
+BIKE800  1         2.3   1.2   1.3
+         2        35.2  35.8  35.0
+         3        12.5  11.9  13.3
+         4        11.3  12.6  11.5
+         5         3.5   3.2   3.7
+         6         3.2   2.7   3.3
+         7         3.6   3.6   3.5
+         8         2.4   2.2   2.4
+         9         9.8  10.0   8.8
+         10       10.0  10.8   9.0
+INCIDENT 1         1.4   1.0   0.7
+         2        28.6  25.9  26.4
+         3        10.9   7.0   8.2
+         4        11.2  12.3  10.6
+         5         2.0   6.6   2.4
+         6         2.2   4.6   2.9
+         7         1.4   9.6   2.5
+         8         1.0   4.7   1.5
+         9         0.9   1.0   0.8
+         10        1.1   1.2   1.0
+
+MEAN SPEEDS [km/h] at the measurement locations
+scenario   BASE  ACTUATED  INCIDENT  BIKE800
+loc                                         
+1         23.62     21.68     23.23    23.63
+2         46.92     46.97     46.99    46.71
+3         46.79     46.94     46.79    46.75
+4         25.65     27.13     25.84    25.44
+5         38.93     39.24     39.03    38.80
+6         47.07     47.30     47.13    46.95
+7         35.91     36.37     36.30    35.88
+8         19.17     16.80     18.88    19.15
+9         18.03     18.02     18.03    15.88
+10        17.81     17.92     17.81    17.11
+11        18.06     18.07     18.06    15.94
+12        17.85     17.85     17.85    17.11
+
+HOURLY FLOWS [veh/h] at the measurement locations
+scenario   BASE  ACTUATED  INCIDENT  BIKE800
+loc                                         
+1         120.0     120.0     121.0    120.0
+2         140.0     140.0     140.0    134.0
+3         721.0     720.0     722.0    721.0
+4         943.0     947.0     937.0    878.0
+5         295.0     295.0     293.0    283.0
+6         999.0    1002.0     995.0    945.0
+7         572.0     570.0     571.0    572.0
+8          92.0      92.0      92.0     92.0
+9          99.0      99.0      99.0    790.0
+10         99.0      99.0      99.0    789.0
+11         96.0      97.0      96.0    785.0
+12         96.0      96.0      96.0    784.0

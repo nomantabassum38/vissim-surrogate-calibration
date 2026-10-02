@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+# Vissim run artefacts
+*.results/
+*.vissimpdb
+*.sqlite
+Temp/
+Backups/
+Scenarios/
+*.inp0
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.synctex.gz

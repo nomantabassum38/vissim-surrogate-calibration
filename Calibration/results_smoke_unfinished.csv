@@ -1,0 +1,4 @@
+config,file,input,remain
+REF_ORIGINAL,Vissim_lab_001.err,3,5
+LHS_001,Vissim_lab_001.err,1,3
+LHS_001,Vissim_lab_001.err,3,137

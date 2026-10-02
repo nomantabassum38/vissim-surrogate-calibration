@@ -1,0 +1,18 @@
+2026-10-02 22:19:39  RUNNING run_alt.py --only BASE ACTUATED INCIDENT BIKE800 --runs 1 --out alt_smoke
+2026-10-02 22:19:42  run_alt: ['BASE', 'ACTUATED', 'INCIDENT', 'BIKE800'] x 1 runs (seed 42/1) -> alt_smoke_*.csv
+2026-10-02 22:20:09    BASE done in 8 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:20:18    ACTUATED done in 9 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:20:26    INCIDENT done in 8 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:20:36    BIKE800 done in 10 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:20:36  run_alt: finished
+2026-10-02 22:20:36  RUNNING analyse_alt.py --out alt_smoke
+2026-10-02 22:20:43  ALL DONE (smoke)
+2026-10-02 22:23:54  RUNNING run_alt.py --runs 20 --out alt
+2026-10-02 22:23:56  run_alt: ['BASE', 'ACTUATED', 'INCIDENT', 'BIKE800'] x 20 runs (seed 42/1) -> alt_*.csv
+2026-10-02 22:26:18    BASE done in 122 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:28:19    ACTUATED done in 121 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:30:21    INCIDENT done in 122 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:32:49    BIKE800 done in 148 s; network attributes not available: ['DelayLatent', 'DemandLatent']
+2026-10-02 22:32:49  run_alt: finished
+2026-10-02 22:32:49  RUNNING analyse_alt.py --out alt
+2026-10-02 22:32:57  ALL DONE (all)

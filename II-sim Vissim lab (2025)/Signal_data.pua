@@ -1,0 +1,53 @@
+$SIGNAL_GROUPS
+$
+Kungsgatan               1
+Kungsgatan_ped           2
+Slottsgatan              3
+Slottsgatan_ped          4
+Kungsgatan_bike          5
+
+$IGM
+$
+                   Kungsgatan    Kungsgatan_ped    Slottsgatan   Slottsgatan_ped Kungsgatan_bike
+Kungsgatan                  -127               5               5            -127            -127
+Kungsgatan_ped                 7            -127            -127               7               7
+Slottsgatan                    5            -127            -127               5               5
+Slottsgatan_ped             -127               7               7            -127            -127
+Kungsgatan_bike             -127               7               7            -127            -127
+
+$STAGES
+$
+stage_1  Kungsgatan Slottsgatan_ped Kungsgatan_bike
+red      Kungsgatan_ped Slottsgatan
+stage_2  Kungsgatan_ped Slottsgatan
+red      Kungsgatan Slottsgatan_ped Kungsgatan_bike
+
+$STARTING_STAGE
+$
+stage_1 
+
+$INTERSTAGE
+INTERSTAGE_number :          1
+length [s]        :         11
+from stage        :          1
+to stage          :          2
+$
+Kungsgatan            -127         2
+Kungsgatan_ped           7       127
+Slottsgatan              6       127
+Slottsgatan_ped       -127         0
+Kungsgatan_bike       -127         0
+
+$INTERSTAGE
+INTERSTAGE_number :          2
+length [s]        :         14
+from stage        :          2
+to stage          :          1
+$
+Kungsgatan               6       127
+Kungsgatan_ped        -127         0
+Slottsgatan           -127         2
+Slottsgatan_ped          7       127
+Kungsgatan_bike          7       127
+
+$END

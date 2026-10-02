@@ -1,0 +1,49 @@
+VALIDATION (independent seeds)
+         config  n_runs      J  RMSE_all  RMSE_motor  RMSE_bike  speed_tests_passed  acc_tests_passed  RMSE_acc  GEH_max  served_L4_%  unfinished_vehs  n_repl_needed  RMSE_all_odd_days  RMSE_all_even_days  feasible
+0          OPT1      10  5.335     2.006       2.456      0.070                   7                 3     0.131    0.683      101.066              124         13.438              1.830               2.268      True
+1          OPT2      10  5.357     1.894       2.319      0.067                   6                 2     0.148    0.683      100.752              146         15.243              1.719               2.160      True
+2          OPT3      10  5.404     2.245       2.747      0.172                   8                 4     0.105    0.683      101.233               72         14.711              2.066               2.501      True
+3      BEST_SIM      10  5.825     2.529       3.092      0.257                   7                 3     0.098    0.683      101.191               89         11.767              2.330               2.795      True
+4  REF_ORIGINAL      10  9.520     4.533       4.852      3.816                   2                 7     0.107    0.683      100.731              131          6.636              4.484               4.631      True
+
+Selected calibrated configuration: OPT1
+ax            1.486
+bx_add        0.819
+bx_mult       1.385
+sdf_sig       0.313
+v_kn         51.729
+v_ks         51.315
+v_se         43.912
+v_sw         52.406
+acc_scale     1.043
+dec_scale     0.894
+v_right      10.127
+dec_right     1.091
+v_left       29.941
+v_bike       17.326
+
+Speeds [km/h], t_crit = 2.101
+loc                        name  field  field_sd    sim  sim_sd   diff       t  pass
+ L1         Slottsgatan East in 17.461     4.655 23.164   1.562  5.704   3.673 False
+ L2        Slottsgatan West out 48.713     0.688 46.577   0.426 -2.136  -8.344 False
+ L3        Kungsgatan South out 49.056     0.335 46.793   0.400 -2.263 -13.716 False
+ L4         Kungsgatan South in 26.999     1.629 25.198   1.155 -1.801  -2.852 False
+ L5        Slottsgatan East out 40.204     0.485 38.843   0.527 -1.361  -6.008 False
+ L6        Kungsgatan North out 46.801     0.444 46.969   0.334  0.168   0.957  True
+ L7         Kungsgatan North in 34.412     1.414 35.367   1.383  0.955   1.527  True
+ L8         Slottsgatan West in 19.050     1.963 19.119   1.549  0.069   0.087  True
+ L9  Kungsgatan South in (bike) 18.072     0.547 18.044   0.401 -0.027  -0.128  True
+L10 Kungsgatan North out (bike) 17.699     0.574 17.807   0.435  0.108   0.474  True
+L11  Kungsgatan North in (bike) 18.072     0.316 18.008   0.304 -0.064  -0.464  True
+L12 Kungsgatan South out (bike) 17.774     0.331 17.831   0.339  0.057   0.382  True
+
+Accelerations [m/s2] (not used in calibration)
+loc  field    sim      t  pass
+ L1 -1.787 -1.609  3.117 False
+ L2  0.763  0.909  4.921 False
+ L3  0.505  0.519  0.783  True
+ L4 -0.214 -0.059  4.654 False
+ L5  1.600  1.779  9.813 False
+ L6  0.724  0.572 -8.834 False
+ L7  0.966  1.028  1.885  True
+ L8 -0.710 -0.669  0.457  True

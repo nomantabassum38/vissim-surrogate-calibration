@@ -1,0 +1,55 @@
+PROGRAM Control_logic; /* C:\Users\guipe31\OneDrive - Linköpings universitet\Teaching\TNK119\Vissim_lab_2_calibrated\Control_logic.vap */
+
+VAP_FREQUENCY 1;
+
+CONST 
+            MAX_GAP = 3,
+            MAX_STG1 = 75,
+            MAX_STG2 = 15;
+
+/* ARRAYS */ 
+
+/* SUBROUTINES */ 
+
+/* PARAMETERS DEPENDENT ON SCJ-PROGRAM */ 
+            
+/* EXPRESSIONS */ 
+            Extend_Stg1 := (Headway( 1 ) <= MAX_GAP) OR (Headway( 2 ) <= MAX_GAP) OR (Headway( 4 ) <= MAX_GAP) OR (Headway( 5 ) <= MAX_GAP);
+            Extend_Stg2 := (Headway( 3 ) <= MAX_GAP) OR (Headway( 6 ) <= MAX_GAP);
+            Call_Stg2 := Occupancy( 3 ) OR Occupancy( 6 );
+            Less_than_max1 := StgT(1) < MAX_STG1;
+            Less_than_max2 := StgT(2) < MAX_STG2;
+
+/* MAIN PROGRAM */ 
+
+S00Z001:    IF T_free( 1 ) = 1 THEN
+S01Z002:      cycSecond := 1
+            ELSE
+S00Z002:      cycSecond := cycSecond + 1
+            END;
+S00Z004:    SetT( cycSecond );
+S00Z006:    IF NOT (Any_interstage_active) THEN
+S00Z007:      IF Stage_active( 1 ) THEN
+S01Z007:        IF Less_than_max1 THEN
+S03Z007:          IF NOT (Extend_Stg1) THEN
+S03Z008:            IF Call_Stg2 THEN
+S04Z008:              Interstage( 1 , 2 )
+                    END
+                  END
+                ELSE
+                  GOTO S03Z008
+                END
+              ELSE
+S00Z010:        IF Stage_active( 2 ) THEN
+S01Z010:          IF Less_than_max2 THEN
+S03Z010:            IF NOT (Extend_Stg2) THEN
+S04Z011:              Interstage( 2 , 1 )
+                    END
+                  ELSE
+                    GOTO S04Z011
+                  END
+                END
+              END
+            END
+PROG_ENDE:    .
+/*----------------------------------------------------------------------------*/

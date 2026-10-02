@@ -1,0 +1,154 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+\usetheme{default}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamercolor{frametitle}{fg=black}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{2A78D6}
+\setbeamercolor{itemize item}{fg=accent}
+\setbeamercolor{title}{fg=black}
+
+\title{Vissim lab: calibration and alternative designs}
+\subtitle{Kungsgatan and Slottsgatan, Norrk\"oping}
+\author{Muhammad Noman Tabassum}
+\institute{Infra Informatics PhD course, Simulation module}
+\date{October 2026}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%--------------------------------------------------------------------
+\begin{frame}{Calibration (1/2): what was changed and why}
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\small
+\textbf{Approach:} Python drives Vissim (COM); 1\,857 runs in 3 phases\\[2pt]
+Latin hypercube $\rightarrow$ Gaussian-process surrogate per output
+$\rightarrow$ Sobol sensitivity $\rightarrow$ constrained optimum $\rightarrow$ validation
+with 10 new seeds\\[6pt]
+\textbf{Most influential parameters}
+\begin{itemize}\setlength{\itemsep}{1pt}
+  \item right-turn speed (L4, L8, L1)
+  \item desired speed per approach (exits L2, L3, L5, L6)
+  \item desired acceleration / deceleration (L7, L1)
+  \item bicycle desired speed (L9 to L12)
+  \item conflict-area gaps: no influence
+\end{itemize}
+\textbf{Constraints:} demand served (GEH $\le$ 5, L4 flow), 600~s warm-up added
+\end{column}
+\begin{column}{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{fig_sensitivity.png}\\
+{\scriptsize Total Sobol indices (surrogate, 567 configurations)}
+\end{column}
+\end{columns}
+\end{frame}
+
+%--------------------------------------------------------------------
+\begin{frame}{Calibration (2/2): outcome}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\footnotesize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrr}
+\toprule
+ & \textbf{Original} & \textbf{Phase 1} & \textbf{Phase 2}\\
+\midrule
+Target & & speed & speed + acc.\\
+Speed RMSE [km/h] & 4.53 & \textbf{1.34} & 2.01\\
+Acc.\ RMSE [m/s$^2$] & \textbf{0.11} & 0.53 & 0.13\\
+Speed tests & 2/12 & 6/12 & \textbf{7/12}\\
+Acc.\ tests & \textbf{7/8} & 1/8 & 3/8\\
+Max GEH & 0.68 & 0.68 & 0.68\\
+\bottomrule
+\end{tabular}}\\[6pt]
+\textbf{Calibrated (phase 2):} right turns 10~km/h (was 22.5); bikes 17.3~km/h (was 13.5);
+Slottsgatan east 44~km/h; slightly tighter car following\\[4pt]
+\textbf{Lesson:} speed-only fitting (phase 1) used unrealistic braking; accelerations must be a target.
+10 to 14 replications needed at L1/L8 ($\varepsilon = 5\,\%$).
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering
+\includegraphics[width=\textwidth]{fig_residuals.png}\\
+{\scriptsize Simulated minus field (10 new seeds); grey: field 95\,\% CI}
+\end{column}
+\end{columns}
+\end{frame}
+
+%--------------------------------------------------------------------
+\begin{frame}{Alternative designs studied (all three)}
+\small
+Baseline = calibrated model (phase 2), fixed time program 1, constant demand.
+20 replications per scenario with \textbf{common random numbers} $\rightarrow$ paired $t$-tests.
+\vspace{6pt}
+\begin{itemize}\setlength{\itemsep}{6pt}
+  \item \textbf{Actuated control}: VisVAP logic, gap 3~s on the detectors, stage 1 (Kungsgatan)
+  up to 75~s, stage 2 (Slottsgatan) up to 15~s
+  \item \textbf{Incident}: inputs A, C, E, G change every 10 min (Table 1);
+  30-min averages equal the baseline, so only the \emph{timing} of demand changes
+  \item \textbf{800 bicycles/h} per direction instead of 100
+\end{itemize}
+\vspace{6pt}
+\textbf{Metrics:} average delay and stops per vehicle (level of service), queue length per
+approach in 10-min intervals (where and when), speeds and flows at L1 to L12 (link to the
+calibration, throughput)
+\end{frame}
+
+%--------------------------------------------------------------------
+\begin{frame}{Results (1/2): network performance and queues}
+\centering
+\includegraphics[width=0.9\textwidth]{fig_alt_network.png}\\[2pt]
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+ & \textbf{Actuated} & \textbf{Incident} & \textbf{800 bikes/h}\\
+\midrule
+$\Delta$ delay [s/veh] & $-5.6$ ($-26\,\%$, $p<0.001$) & $+0.1$ ($p=0.67$) & $+1.2$ ($p<0.001$)\\
+Queue Kungsg.\ northbound [m] & 27.5 $\rightarrow$ 12.1 & 27.5 $\rightarrow$ 26.9 & 27.5 $\rightarrow$ 35.3\\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+%--------------------------------------------------------------------
+\begin{frame}{Results (2/2): incident dynamics and bicycle conflict}
+\centering
+\includegraphics[width=0.95\textwidth]{fig_alt_incident.png}\\[2pt]
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\footnotesize
+\textbf{Incident:} Slottsgatan left-turn queues double to triple in minutes 10 to 20 and
+dissolve in the next interval; invisible in 30-min averages.
+\end{column}
+\begin{column}{0.48\textwidth}
+\footnotesize
+\textbf{800 bikes/h:} right-turners yield to cyclists; car flow at L4 943 $\rightarrow$
+878~veh/h ($-7\,\%$), stops doubled, bike speed 17.9 $\rightarrow$ 16.5~km/h.
+\end{column}
+\end{columns}
+\end{frame}
+
+%--------------------------------------------------------------------
+\begin{frame}{Observations and questions for discussion}
+\small
+\begin{itemize}\setlength{\itemsep}{5pt}
+  \item The calibration target decides the result: speed-only fitting produced a model that was
+  ``right for the wrong reason''. Should acceleration data be a standard calibration target?
+  \item L1 has a field s.d.\ of 4.7~km/h but L3 only 0.3~km/h: an RMSE treats them equally, the
+  $t$-test does not. Which acceptance criterion should a calibration use?
+  \item Remaining misfits (L1 deceleration, exit speeds) look structural: turning speeds act only
+  after the stop line. When should we change the model instead of its parameters?
+  \item The actuated controller gains 26\,\% delay mainly by taking green from the side road.
+  Is average delay the right objective, or should side-road waiting be weighted?
+  \item Calibrated at 100 bicycles/h, but the bicycle scenario depends on car to cyclist conflicts
+  that the data could not calibrate. How far can a calibrated model be extrapolated?
+\end{itemize}
+\end{frame}
+
+\end{document}
